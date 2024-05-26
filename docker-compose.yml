@@ -12,6 +12,15 @@ services:
     environment:
       - TZ=Asia/Shanghai # 设置时区
       - ARKOSE_TOKEN_URL=http://arkose:5006/token # 已内置，不要改动
+      - AUTHORIZATION=sk-this-is-a-chat2api-free-key
+      - CHATGPT_BASE_URL=https://chatgpt.com
+      - HISTORY_DISABLED=true
+      - POW_DIFFICULTY=000032
+      - RETRY_TIMES=3
+      - ENABLE_GATEWAY=true
+      - CONVERSATION_ONLY=false
+      - ENABLE_LIMIT=true
+      - UPLOAD_BY_URL=false
 
   arkose:
     image: lanqian528/funcaptcha_solver:latest
